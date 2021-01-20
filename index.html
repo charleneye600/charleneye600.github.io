@@ -172,8 +172,81 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p> 内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p> 内容</p>
+        <h1 id="使用hexo搭建个人博客"><a href="#使用hexo搭建个人博客" class="headerlink" title="使用hexo搭建个人博客"></a>使用hexo搭建个人博客</h1><blockquote>
+<p>前言：今天刚好有一个朋友问我有没有写自己的个人博客，我说没有，因为我平时都是把笔记记在印象笔记里，还有自己太懒了，懒的搞～，不过最近闲的慌，想着搞搞看！然后就有了这篇文章（趁热打铁，文章使用markdown,由于刚接触，可能会出现一些小错误，大佬们勿喷)</p>
+</blockquote>
+<ol>
+<li><p>首先安装node.js（已安装的跳过这个步骤)</p>
+<ul>
+<li><p>方法一：通过homebrew安装</p>
+<p>安装homebrew（已经安装的跳过这一步)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>&quot;</span> </span><br></pre></td></tr></table></figure>
+<p>安装node：brew install node</p>
+</li>
+<li><p>方法二：直接官网下载安装包</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/">https://nodejs.org/dist/</a></p>
+<p>根据电脑类型直接下载LTS版本的就OK了，安装包会一键安装node和npm</p>
+</li>
+<li><p>查看node是否安装成功:</p>
+<p>node -v</p>
+<p>npm -v</p>
+</li>
+</ul>
+<p>![image-20210120164031624](/Users/stavenvanderbilt/Library/Application Support/typora-user-images/image-20210120164031624.png)</p>
+<p>​    如果是这样子的，就是安装成功啦！！！</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>安装hexo框架</p>
+<p>sudo su #进入root权限</p>
+<p>mkdir blog # 新建blog文件(后期如果不想要了可以直接删掉)  </p>
+<p>npm install -g hexo-cli</p>
+<p>npm 由于源服务器在国外，所以下载速度慢甚至很多时候是安装不成功的</p>
+<p>建议把npm 换成 cnpm </p>
+<p>安装cnpm命令</p>
+<p>npm install -g cnpm -registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p>cnpm install -g hexo-cli</p>
+<p>![image-20210120165753941](/Users/stavenvanderbilt/Library/Application Support/typora-user-images/image-20210120165753941.png)</p>
+<p>hero s  之后访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 看到hexo帮你创建出来的第一个hello word文章说明创建成功啦！</p>
+</li>
+<li><p>新建博客文章</p>
+<p>hero new “我的第一篇博客文章”</p>
+<p>![image-20210120174221853](/Users/stavenvanderbilt/Library/Application Support/typora-user-images/image-20210120174221853.png)</p>
+<p>新建的文件就在source/_posts里面</p>
+<p>hexo clean #清理</p>
+<p>hexo g  #生成</p>
+<p>hexo s #这个时候就可以看到你刚创建出来的博客文章了（可以使用编辑器VSCode、HBuilderX等编辑，我用的是typora)</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>部署到githug上</p>
+<p>个人博客只能在本地上访问的话～那直接写在印象笔记里不香吗，所以我们应该把把部署到github上(gitee也行)，我是使用github</p>
+<p>![image-20210120175604594](/Users/stavenvanderbilt/Library/Application Support/typora-user-images/image-20210120175604594.png)</p>
+</li>
+</ol>
+<p>   在blog目录下安装git部署插件</p>
+<p>   cnpm install –save hexo-deployer-git</p>
+<hr>
+<p>   修改_config.yml配置</p>
+<p>   vim _config.yml进入文件，在末尾添加如下内容</p>
+<p>   ![image-20210120175046529](/Users/stavenvanderbilt/Library/Application Support/typora-user-images/image-20210120175046529.png)</p>
+<p>   hero d  #部署到远程github仓库上</p>
+<p>   这个时候就可以直接访问: YourGithubName.github.io（charleneye600.github.io)</p>
+<ol start="5">
+<li><p>修改主题</p>
+<p>如果觉得hexo默认生成的主题不好看的可以自己修改主题，可以自己用代码修改也可以引入别人写好的主题模版（这里我才用的是第二种）</p>
+<p>引入的是这个主题模版，比较简约 <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">https://github.com/litten/hexo-theme-yilia</a></p>
+<p>直接到控制台（把拉下来的代码放到blog目录下的themes/yilia里)</p>
+<p> git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
+<p>然后修改_config.yml</p>
+<p>![image-20210120180340741](/Users/stavenvanderbilt/Library/Application Support/typora-user-images/image-20210120180340741.png)</p>
+</li>
+</ol>
+<p>hexo clean #清理一下</p>
+<p>hexo g #生成</p>
+<p>hexo d #部署到远程GitHub仓库</p>
+<hr>
+<p>第一次写文章，思路还有表达方面可能有点奇怪，大家看看就好～</p>
 
       
 
