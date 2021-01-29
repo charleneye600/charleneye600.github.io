@@ -10,9 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/tags/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-25T06:56:33.257Z">
+<meta property="article:modified_time" content="2021-01-25T06:56:33.256Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,66 +152,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-聊聊transform属性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/27/%E8%81%8A%E8%81%8Atransform%E5%B1%9E%E6%80%A7/">聊聊transform属性</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/27/%E8%81%8A%E8%81%8Atransform%E5%B1%9E%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2021-01-27T07:50:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<blockquote>
-<p>transform这个属性其实很早之前就接触过了，但是感觉自己脑子真的不好，老记不住….不知道有没有同款的～，今天就好好梳理一下，当作复习下次记不起来也方便看～，本文是新手小白自己的理解，如有错误的地方，希望指正！！！</p>
-</blockquote>
-</blockquote>
-<p>transform属性应用于元素的2D和3D转换，允许元素进行旋转(rotate)、缩放(scale)、移动(translate)、倾斜(skew)等</p>
-<ol>
-<li><p>旋转(rotate)</p>
-<p>rotate(angle)、rotate3d(x,y,zangle)、rotateX(angle)、rotateY(angle)、rotateZ(angle)</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        *&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">padding</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        div&#123;</span><br><span class="line">            display: flex;</span><br><span class="line">            flex-direction: column;</span><br><span class="line">            justify-content: center;</span><br><span class="line">            align-items: center;</span><br><span class="line">            text-align: center;</span><br><span class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:300px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:250px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:30px</span> <span class="selector-tag">auto</span>;</span></span><br><span class="line">            background: cyan;</span><br><span class="line"><span class="css">            <span class="comment">/* 将div盒子旋转顺时针8deg ,正为顺时针、负为逆时针*/</span></span></span><br><span class="line">            transform: rotate(8deg);</span><br><span class="line">            /* transform: rotate3d(x,y,z,angle); </span><br><span class="line">                x为旋转x轴坐标方向的矢量、y为旋转y轴坐标方向的矢量、z为旋转z轴坐标方向的矢量,angle为旋转的角度*/</span><br><span class="line"><span class="css">            <span class="comment">/* transform: rotate3d(0,0,10,20deg) */</span></span></span><br><span class="line"><span class="css">            <span class="comment">/* transform: rotateX(45deg);*/</span></span></span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;photoImg.jpeg&quot;</span> <span class="attr">width</span>=<span class="string">&quot;250px&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200px&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a photo.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<ol start="2">
-<li><p>缩放(scale)</p>
-<p>scale()、scaleX()、scaleY()</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        *&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">padding</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        div&#123;</span><br><span class="line">            display: flex;</span><br><span class="line">            flex-direction: column;</span><br><span class="line">            justify-content: center;</span><br><span class="line">            align-items: center;</span><br><span class="line">            text-align: center;</span><br><span class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:300px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:250px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:30px</span> <span class="selector-tag">auto</span>;</span></span><br><span class="line">            background: cyan;</span><br><span class="line"><span class="css">            <span class="comment">/* transform:scale(num) 通过定义num值定义缩放的大小 正值为放大x轴放大num倍，y轴放大num倍,负值为放大num倍且翻转*/</span></span></span><br><span class="line"><span class="css">            <span class="selector-tag">transform</span><span class="selector-pseudo">:scale(2)</span>;</span></span><br><span class="line"><span class="css">            <span class="comment">/* transform:scaleX(-2); */</span></span></span><br><span class="line"><span class="css">            <span class="comment">/* transform: scaleY(2); */</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;photoImg.jpeg&quot;</span> <span class="attr">width</span>=<span class="string">&quot;250px&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200px&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a photo.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<ol start="3">
-<li><p>移动(translate)</p>
-<p>translate()、translateX()、translateY()、translate3d()</p>
-</li>
-<li><p>倾斜(skew)</p>
-<p>skew(angle)、skewX(angle)、shewY(angle)</p>
-</li>
-</ol>
-<h4 id="这里用transform属性实现一个视差效果"><a href="#这里用transform属性实现一个视差效果" class="headerlink" title="这里用transform属性实现一个视差效果"></a>这里用transform属性实现一个视差效果</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">main</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-5x fa-laugh&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">h3</span>&gt;</span>Welcome<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span>&gt;</span>Scroll to see how cool i am!<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">h3</span>&gt;</span>Cool like you<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这是页面显示的主要内容,接下来是css样式</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  			<span class="comment">/* 引入字体链接*/</span></span></span><br><span class="line"><span class="css">        <span class="keyword">@import</span> url(<span class="string">&quot;https://fonts.googleapis.com/css?family=Courgette:400,700&amp;display=swap&quot;</span>);</span></span><br><span class="line"></span><br><span class="line">        * &#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">            box-sizing: border-box;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        body &#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(135<span class="selector-tag">deg</span>, <span class="selector-id">#0056a7</span>, <span class="selector-id">#165fa3</span>, <span class="selector-id">#477aaa</span>);</span></span><br><span class="line">            font-family: &quot;Courgette&quot;, cursive;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">  			<span class="comment">/*添加笑脸*/</span></span></span><br><span class="line">        i&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">display</span><span class="selector-pseudo">:inline-block</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:60px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:60px</span>;</span></span><br><span class="line">            background-image: url(&#x27;./xiao.png&#x27;);</span><br><span class="line">        &#125;</span><br><span class="line">				</span><br><span class="line">        header &#123;</span><br><span class="line"><span class="css">          <span class="comment">/* 设置为弹性盒子模型、垂直居中*/</span></span></span><br><span class="line">            display: flex;</span><br><span class="line">            justify-content: center;</span><br><span class="line">            align-items: center;</span><br><span class="line">            flex-direction: column;</span><br><span class="line">            position: relative;</span><br><span class="line">            height: 100vh;</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#eee</span>;</span></span><br><span class="line">            z-index: -1;</span><br><span class="line">            text-align: center;</span><br><span class="line"><span class="css">          <span class="comment">/* 定义动画 */</span></span></span><br><span class="line">            animation: fadeIn 1.5s ease-in-out;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        section &#123;</span><br><span class="line">            display: flex;</span><br><span class="line">            align-items: center;</span><br><span class="line">            justify-content: center;</span><br><span class="line">            z-index: 1;</span><br><span class="line">            height: 100vh;</span><br><span class="line">            font-size: 5rem;</span><br><span class="line"><span class="css">            <span class="selector-tag">background</span>: <span class="selector-id">#fcdb6d</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#0056a7</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">				<span class="comment">/*为后面添加class属性做准备*/</span></span></span><br><span class="line"><span class="css">        <span class="selector-class">.animate-me</span> &#123;</span></span><br><span class="line"><span class="css">          <span class="comment">/* 定义动画 */</span></span></span><br><span class="line">            animation: bounceIn 3s ease-in-out;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">				<span class="comment">/* 关键帧动画、实现透明度从0到1的过渡*/</span></span></span><br><span class="line"><span class="css">        <span class="keyword">@keyframes</span> fadeIn &#123;</span></span><br><span class="line">            from &#123;</span><br><span class="line">                opacity: 0;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            to &#123;</span><br><span class="line">                opacity: 1;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">				<span class="comment">/*关键帧动画，实现字体大小0.1倍、透明度为0变成字体大小为1.2倍、透明度为1，再到字体为1的过程*/</span></span></span><br><span class="line"><span class="css">        <span class="keyword">@keyframes</span> bounceIn &#123;</span></span><br><span class="line">            0% &#123;</span><br><span class="line">                transform: scale(0.1);</span><br><span class="line">                opacity: 0;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            60% &#123;</span><br><span class="line">                transform: scale(1.2);</span><br><span class="line">                opacity: 1;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            100% &#123;</span><br><span class="line">                transform: scale(1);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>下面是js代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  			<span class="comment">//设置一个监听事件</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">window</span>.addEventListener(<span class="string">&#x27;scroll&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">          <span class="comment">//获取鼠标在屏幕上y轴的变化</span></span></span><br><span class="line"><span class="javascript">            <span class="keyword">const</span> distance = <span class="built_in">window</span>.scrollY;</span></span><br><span class="line"><span class="javascript">            <span class="comment">// console.log(distance)</span></span></span><br><span class="line"><span class="javascript">          <span class="comment">//获取header这个标签，并添加一个transform的属性，属性值向y轴平移(distance*1)px</span></span></span><br><span class="line"><span class="javascript">            <span class="built_in">document</span>.querySelector(<span class="string">&#x27;header&#x27;</span>).style.transform = <span class="string">&#x27;translateY($&#123;distance*1&#125;px)&#x27;</span></span></span><br><span class="line"><span class="javascript">            <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.container&#x27;</span>).style.transform = <span class="string">&#x27;translateY($&#123;distance*0.3&#125;px)&#x27;</span></span></span><br><span class="line"><span class="javascript">          <span class="comment">//设置定时器</span></span></span><br><span class="line"><span class="javascript">            <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">document</span>.querySelector(<span class="string">&#x27;section h3&#x27;</span>).classList.add(<span class="string">&quot;animate-me&quot;</span>)</span></span><br><span class="line">            &#125;, 400)</span><br><span class="line">        &#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+        
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -218,16 +189,65 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/27/%E8%81%8A%E8%81%8Atransform%E5%B1%9E%E6%80%A7/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/tags/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -246,129 +266,6 @@
 </aside>
 
 
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">使用hexo搭建个人博客</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-01-20T05:40:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>前言：今天刚好有一个朋友问我有没有写自己的个人博客，我说没有，因为我平时都是把笔记记在印象笔记里，还有自己太懒了，懒的搞～，不过最近闲的慌，想着搞搞看！然后就有了这篇文章（趁热打铁，文章使用markdown,由于刚接触，可能会出现一些小错误，大佬们勿喷)</p>
-</blockquote>
-<h4 id="首先安装node-js（已安装的跳过这个步骤"><a href="#首先安装node-js（已安装的跳过这个步骤" class="headerlink" title="首先安装node.js（已安装的跳过这个步骤)"></a>首先安装node.js（已安装的跳过这个步骤)</h4><ul>
-<li><p>方法一：通过homebrew安装</p>
-<p>安装homebrew（已经安装的跳过这一步)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>&quot;</span> </span><br></pre></td></tr></table></figure>
-<p>安装node：brew install node</p>
-</li>
-<li><p>方法二：直接官网下载安装包</p>
-<p>官网：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/">https://nodejs.org/dist/</a></p>
-<p>根据电脑类型直接下载LTS版本的就OK了，安装包会一键安装node和npm</p>
-</li>
-<li><p>查看node是否安装成功:</p>
-<p>node -v</p>
-<p>npm -v</p>
-<p>[<img src="https://s3.ax1x.com/2021/01/21/shEaJe.png" alt="shEaJe.png"></p>
-</li>
-</ul>
-<p>​    如果是这样子的，就是安装成功啦！！！</p>
-<h4 id="安装hexo框架"><a href="#安装hexo框架" class="headerlink" title="安装hexo框架"></a>安装hexo框架</h4><p>sudo su #进入root权限</p>
-<p>mkdir blog # 新建blog文件(后期如果不想要了可以直接删掉)  </p>
-<p>npm install -g hexo-cli</p>
-<p>npm 由于源服务器在国外，所以下载速度慢甚至很多时候是安装不成功的</p>
-<p>建议把npm 换成 cnpm </p>
-<p>安装cnpm命令</p>
-<p>npm install -g cnpm -registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
-<p>cnpm install -g hexo-cli</p>
-<p>[<img src="https://s3.ax1x.com/2021/01/21/shA2vR.png" alt="shA2vR.png"></p>
-<p>hero s  之后访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 看到hexo帮你创建出来的第一个hello word文章说明创建成功啦！</p>
-<h4 id="新建博客文章"><a href="#新建博客文章" class="headerlink" title="新建博客文章"></a>新建博客文章</h4><p>hero new “我的第一篇博客文章”</p>
-<p>[<img src="https://s3.ax1x.com/2021/01/21/shE3s1.png" alt="shE3s1.png"></p>
-<p>新建的文件就在source/_posts里面</p>
-<p>hexo clean #清理</p>
-<p>hexo g  #生成</p>
-<p>hexo s #这个时候就可以看到你刚创建出来的博客文章了（可以使用编辑器VSCode、HBuilderX等编辑，我用的是typora)</p>
-<h4 id="部署到githug上"><a href="#部署到githug上" class="headerlink" title="部署到githug上"></a>部署到githug上</h4><p>个人博客只能在本地上访问的话～那直接写在印象笔记里不香吗，所以我们应该把把部署到github上(gitee也行)，我是使用github</p>
-<p><img src="https://s3.ax1x.com/2021/01/21/shERJg.jpg" alt="shERJg.jpg"></p>
-<p>在blog目录下安装git部署插件</p>
-<p>cnpm install –save hexo-deployer-git</p>
-<hr>
-<p>修改_config.yml配置</p>
-<p>vim _config.yml进入文件，在末尾添加如下内容</p>
-<p>[<img src="https://s3.ax1x.com/2021/01/21/shA2vR.png" alt="shA2vR.png"></p>
-<p>hero d  #部署到远程github仓库上</p>
-<p>这个时候就可以直接访问: YourGithubName.github.io（charleneye600.github.io)</p>
-<h4 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h4><p>如果觉得hexo默认生成的主题不好看的可以自己修改主题，可以自己用代码修改也可以引入别人写好的主题模版（这里我才用的是第二种）</p>
-<p>引入的是这个主题模版，比较简约 <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">https://github.com/litten/hexo-theme-yilia</a></p>
-<p>直接到控制台（把拉下来的代码放到blog目录下的themes/yilia里)</p>
-<p> git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
-<p>然后修改_config.yml</p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/shAt3j"><img src="https://s3.ax1x.com/2021/01/21/shAt3j.png" alt="shAt3j.png"></a></p>
-<p>hexo clean #清理一下</p>
-<p>hexo g #生成</p>
-<p>hexo d #部署到远程GitHub仓库</p>
-<hr>
-<p>第一次写文章，思路还有表达方面可能有点奇怪，大家看看就好～</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -390,7 +287,7 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
